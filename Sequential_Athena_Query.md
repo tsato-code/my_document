@@ -1,9 +1,9 @@
-# 逐次的に Athena のクエリを流す
+# SageMaker から Athena のクエリを大量に流す
 
-SageMaker から Athena のクエリを流すときに、逐次的にクエリを流す方法。
+SageMaker から Athena のクエリを大量に流すときの方法。
 
 
-```Python
+```py
 import time
 import pandas as pd
 from pyathena import connect
@@ -61,13 +61,62 @@ for yyyymmdd in date_range:
 # クエリ確認
 print(query_l[0])
 print(query_l[-1])
+```
 
-# クエリを逐次実行
+## 逐次処理するとき
+
+```py
+# クエリを逐次処理
 for query in tqdm(query_l):
     cursor.execute(query)
     time.sleep(1)
 ```
 
+## 並行処理するとき
+
+下記に注意する。
+- S3 の Read/Write 上限。
+- Athena の並列実行数。
+- SageMaker のスレッド数。
+
+```py
+# クエリを並行処理
+from multiprocessing import Pool
+import random
 
 
+def exponential_backoff_and_jitter(query, max_trial=1):
+    try_count = 0
+    is_success = False
+
+    while True:
+        time.sleep( 2**try_cout + 2*random.random() )
+
+        if try_count >= max_trial:
+            break
+
+        try:
+            cursor.execute(query)
+            is_success = True
+            break
+        except Exception as e:
+            print(e)
+        
+        try_count += 1
+
+    if not is_success:
+        print(query)
+        raise Exception('stop')
+    
+    return is_success
+
+
+# テーブル作成
+cursor.execute( template_create_table() )
+
+# 並行処理
+pool = Pool(processes=8)
+with tqdm(total=len(query_l)) as t:
+    for _ in pool.imap_unordered( exponential_backoff_and_jitter, query_l )
+```
 
