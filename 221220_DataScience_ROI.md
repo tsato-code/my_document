@@ -26,3 +26,4 @@
 ### 参考資料
 
 - [How to Estimate ROI and Costs for Machine Learning and Data Science Projects | altexsoft](https://www.altexsoft.com/blog/business/how-to-estimate-roi-and-costs-for-machine-learning-and-data-science-projects/)
+- [エムスリーのデータ分析グループが、どのようなKPIを追っているのかについて | note](https://note.com/m3dag/n/n63032b0d4e7e)
