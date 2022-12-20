@@ -120,3 +120,26 @@ with tqdm(total=len(query_l)) as t:
     for _ in pool.imap_unordered( exponential_backoff_and_jitter, query_l )
 ```
 
+## 並行処理プロセスをキル
+
+```py
+import multiprocessing
+
+for child in multiprocessing.active_children():
+    print(child.pid)
+
+# output
+# 9404
+# 7269
+# 9408
+# 9406
+```
+
+ターミナルからキル。
+
+```bash
+$ kill 9404
+$ kill 7269
+$ kill 9408
+$ kill 9406
+```
