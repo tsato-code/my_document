@@ -8,6 +8,14 @@
 - [試行回数の増やし方 2021年度版 | speakerdeck (AIP/東北大学 乾研究室 清野舜)](https://speakerdeck.com/butsugiri/increasing-number-of-attempts-ver-2021)
 - [Kaggleで多くの実験を回すためにやっている簡単なこと | ZENN (fkubota)](https://zenn.dev/fkubota/articles/2b8d46b11c178ac2fa2d)
 - [Kaggle 日記 | GitHub (fkubota)](https://github.com/fkubota/kaggle-Indoor-Location-and-Navigation)
+- Kaggle Advent Calendar
+    - [2022](https://qiita.com/advent-calendar/2022/kaggle)
+    - [2021](https://qiita.com/advent-calendar/2021/kaggle)
+    - [2020](https://qiita.com/advent-calendar/2020/kaggle)
+    - [2019](https://qiita.com/advent-calendar/2019/kaggle) [その2](https://qiita.com/advent-calendar/2019/kaggle-part2) [企画](https://qiita.com/advent-calendar/2019/xtech-businessai-kaggle)
+    - [2018](https://qiita.com/advent-calendar/2018/kaggle) [その2](https://qiita.com/advent-calendar/2018/kaggle-part2)
+    - [2017](https://qiita.com/advent-calendar/2017/kaggle)
+
 
 ## 構造化データ
 
