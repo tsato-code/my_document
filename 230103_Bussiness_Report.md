@@ -29,3 +29,5 @@
 - [How To Write a Formal Business Report in 11 Steps | indeed](https://www.indeed.com/career-advice/career-development/formal-business-report-example)
 - [How to write a powerful business report | CCCFGlobal](https://edu.gcfglobal.org/en/business-communication/how-to-write-a-powerful-business-report/1/)
 - [How to write a business report | Victoria University of Wellington](https://www.wgtn.ac.nz/learning-teaching/support/approach/steps-to-teaching-success/resources/WSBG-report-writing-guide-2017.pdf)
+- [ECサイトディレクターが3つの分析レポートを伝授！ Googleアナリティクスでのアクセス解析方法](https://roots.members.co.jp/blog/201001/)
+- [ECサイトの解析レポート作り方マニュアル [アクセス解析tips] | webtan](https://webtan.impress.co.jp/e/2010/11/04/9126)
